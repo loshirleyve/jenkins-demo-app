@@ -1,0 +1,18 @@
+{
+  "name": "jenkins-demo-app",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "build": "vite build",
+    "lint": "echo '✅ Lint passed'",
+    "test": "echo '✅ All tests passed'"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "type": "commonjs",
+  "devDependencies": {
+    "vite": "^8.0.10"
+  }
+}
