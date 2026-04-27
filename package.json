@@ -4,12 +4,15 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "build": "echo 'Build OK' && mkdir -p dist && echo 'built' > dist/index.html",
+    "build": "vite build",
     "lint": "echo '✅ Lint passed'",
     "test": "echo '✅ All tests passed'"
   },
   "keywords": [],
   "author": "",
   "license": "ISC",
-  "type": "commonjs"
+  "type": "commonjs",
+  "devDependencies": {
+    "vite": "^8.0.10"
+  }
 }
