@@ -33,6 +33,12 @@ pipeline {
                 echo 'Building project...'
                 sh 'npm run build'
             }
+            post {
+                success {
+                    // 构建成功，把产物归档
+                    archiveArtifacts artifacts: 'dist/**', fingerprint: true
+                }
+            }
         }
 
     }
