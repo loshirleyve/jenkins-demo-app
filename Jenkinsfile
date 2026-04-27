@@ -3,7 +3,7 @@ pipeline {
 
     // 工具声明（告诉 Jenkins 用哪个版本的 Node）
     tools {
-        nodejs 'nodejs 20'   // ← 需要先配置，我们 Step 4 做
+        nodejs 'nodejs 25.9.0'   // ← 需要先配置，我们 Step 4 做
     }
 
     environment {
