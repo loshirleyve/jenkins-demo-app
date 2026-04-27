@@ -1,11 +1,6 @@
 pipeline {
     agent any
 
-    // 工具声明（告诉 Jenkins 用哪个版本的 Node）
-    tools {
-        nodejs 'nodejs 25.9.0'   // ← 需要先配置，我们 Step 4 做
-    }
-
     environment {
         NODE_ENV = 'production'
     }
@@ -37,12 +32,6 @@ pipeline {
             steps {
                 echo 'Building project...'
                 sh 'npm run build'
-            }
-            post {
-                success {
-                    // 构建成功，把产物归档
-                    archiveArtifacts artifacts: 'dist/**', fingerprint: true
-                }
             }
         }
 
